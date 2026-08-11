@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root { --ink:#12211d; --muted:#5e6d68; --paper:#fbfcf9; --cream:#f3f5ee; --line:#dce5dd; --green:#176b52; --green-dark:#0e4d3c; --gold:#c69a51; --white:#fff; }
+    :root { --ink:#10213a; --muted:#5b6b80; --paper:#fbfcff; --cream:#f1f5fb; --line:#dbe5f0; --green:#1769aa; --green-dark:#0d3d71; --gold:#7db6e8; --white:#fff; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; color:var(--ink); background:var(--paper); font-family:"DM Sans",Arial,sans-serif; line-height:1.6; }
@@ -19,7 +19,7 @@
     .topbar-inner, .nav, .wrap { max-width:1180px; margin:auto; padding-left:24px; padding-right:24px; }
     .topbar-inner { display:flex; justify-content:space-between; align-items:center; min-height:42px; gap:18px; }
     .topbar a { color:#fff; text-decoration:none; }
-    .topbar i { color:#a9d4bf; margin-right:7px; }
+    .topbar i { color:#a9cbed; margin-right:7px; }
     .topbar .quick-links { display:flex; gap:22px; }
     nav { background:rgba(255,255,255,.94); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; backdrop-filter:blur(12px); }
     .nav { min-height:78px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
@@ -29,12 +29,12 @@
     .nav-links a { text-decoration:none; }
     .nav-links a:hover { color:var(--green); }
     .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; border-radius:7px; padding:13px 20px; text-decoration:none; font-weight:700; transition:.2s ease; }
-    .button-primary { background:var(--green); color:#fff; box-shadow:0 8px 18px rgba(23,107,82,.18); }
+    .button-primary { background:var(--green); color:#fff; box-shadow:0 8px 18px rgba(23,105,170,.18); }
     .button-primary:hover { background:var(--green-dark); transform:translateY(-2px); }
-    .button-outline { border:1px solid #9eb7aa; color:var(--green-dark); background:#fff; }
-    .button-outline:hover { border-color:var(--green); background:#f6faf7; }
-    .hero { position:relative; overflow:hidden; background:linear-gradient(118deg,#edf4ed 0%,#f9faf5 53%,#e9f2ed 100%); border-bottom:1px solid var(--line); }
-    .hero::before { content:""; position:absolute; width:580px; height:580px; border:1px solid rgba(23,107,82,.14); border-radius:50%; right:-160px; top:-245px; box-shadow:0 0 0 55px rgba(23,107,82,.035),0 0 0 120px rgba(23,107,82,.025); }
+    .button-outline { border:1px solid #9db9d7; color:var(--green-dark); background:#fff; }
+    .button-outline:hover { border-color:var(--green); background:#f4f8fd; }
+    .hero { position:relative; overflow:hidden; background:linear-gradient(118deg,#edf4fb 0%,#f9fbff 53%,#e8f1fb 100%); border-bottom:1px solid var(--line); }
+    .hero::before { content:""; position:absolute; width:580px; height:580px; border:1px solid rgba(23,105,170,.14); border-radius:50%; right:-160px; top:-245px; box-shadow:0 0 0 55px rgba(23,105,170,.035),0 0 0 120px rgba(23,105,170,.025); }
     .hero-grid { position:relative; max-width:1180px; margin:auto; padding:90px 24px 100px; display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:center; }
     .eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--green); text-transform:uppercase; font-size:.77rem; letter-spacing:.13em; font-weight:700; }
     .eyebrow::before { content:""; width:28px; height:2px; background:var(--gold); }
@@ -43,9 +43,9 @@
     .hero h1 em { color:var(--green); font-style:normal; }
     .hero-copy { color:var(--muted); max-width:610px; font-size:1.1rem; }
     .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:31px; }
-    .trust-line { margin-top:35px; display:flex; flex-wrap:wrap; gap:22px; color:#466258; font-size:.92rem; font-weight:600; }
+    .trust-line { margin-top:35px; display:flex; flex-wrap:wrap; gap:22px; color:#48627f; font-size:.92rem; font-weight:600; }
     .trust-line i { color:var(--green); margin-right:6px; }
-    .hero-card { background:#fff; border:1px solid #d7e5da; box-shadow:0 25px 55px rgba(20,50,39,.12); border-radius:14px; padding:31px; position:relative; }
+    .hero-card { background:#fff; border:1px solid #d5e3f1; box-shadow:0 25px 55px rgba(16,33,58,.12); border-radius:14px; padding:31px; position:relative; }
     .hero-card::before { content:""; position:absolute; left:0; top:26px; bottom:26px; width:4px; background:var(--gold); border-radius:0 5px 5px 0; }
     .hero-card h2 { font-family:"Playfair Display",Georgia,serif; font-size:1.65rem; line-height:1.2; margin-bottom:10px; }
     .hero-card > p { color:var(--muted); font-size:.94rem; }
@@ -59,30 +59,30 @@
     .section-head p { color:var(--muted); font-size:1.04rem; }
     .service-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
     .service { padding:29px 26px; border:1px solid var(--line); border-radius:11px; background:#fff; transition:.22s ease; }
-    .service:hover { transform:translateY(-5px); border-color:#a9cabc; box-shadow:0 16px 30px rgba(18,33,29,.08); }
-    .service-icon { width:45px; height:45px; display:grid; place-items:center; background:#e9f4ee; color:var(--green); border-radius:9px; font-size:1.2rem; margin-bottom:20px; }
+    .service:hover { transform:translateY(-5px); border-color:#a9c9e7; box-shadow:0 16px 30px rgba(16,33,58,.08); }
+    .service-icon { width:45px; height:45px; display:grid; place-items:center; background:#e8f2fc; color:var(--green); border-radius:9px; font-size:1.2rem; margin-bottom:20px; }
     .service h3 { font-size:1.1rem; margin-bottom:9px; }
     .service p { color:var(--muted); font-size:.94rem; margin:0; }
     .numbers { background:var(--green-dark); color:#fff; }
     .numbers-grid { display:grid; grid-template-columns:repeat(4,1fr); }
     .number { padding:10px 32px 10px 0; border-right:1px solid rgba(255,255,255,.18); margin-right:32px; }
     .number:last-child { border:0; }
-    .number strong { display:block; font-family:"Playfair Display",Georgia,serif; color:#e6c889; font-size:2.8rem; letter-spacing:-.04em; line-height:1.1; }
-    .number span { color:#d4e2da; font-size:.92rem; }
+    .number strong { display:block; font-family:"Playfair Display",Georgia,serif; color:#a8d2fa; font-size:2.8rem; letter-spacing:-.04em; line-height:1.1; }
+    .number span { color:#d2e1f2; font-size:.92rem; }
     .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
-    .why-panel { background:var(--green-dark); color:#fff; padding:45px; border-radius:14px; box-shadow:0 18px 40px rgba(14,77,60,.2); }
+    .why-panel { background:var(--green-dark); color:#fff; padding:45px; border-radius:14px; box-shadow:0 18px 40px rgba(13,61,113,.2); }
     .why-panel h2 { font-family:"Playfair Display",Georgia,serif; font-size:2.25rem; line-height:1.16; margin:13px 0; }
-    .why-panel p { color:#d9e8df; }
+    .why-panel p { color:#d8e6f5; }
     .why-list { list-style:none; padding:0; margin:27px 0 0; }
     .why-list li { border-top:1px solid rgba(255,255,255,.17); padding:15px 0; display:flex; gap:13px; font-weight:600; }
-    .why-list i { color:#e6c889; margin-top:5px; }
+    .why-list i { color:#a8d2fa; margin-top:5px; }
     .process { display:grid; gap:0; }
     .process-item { display:grid; grid-template-columns:64px 1fr; gap:20px; padding:22px 0; border-bottom:1px solid var(--line); }
     .process-item:first-child { border-top:1px solid var(--line); }
-    .process-num { width:42px; height:42px; border:1px solid #acc9b9; border-radius:50%; display:grid; place-items:center; color:var(--green); font-weight:700; }
+    .process-num { width:42px; height:42px; border:1px solid #abc8e6; border-radius:50%; display:grid; place-items:center; color:var(--green); font-weight:700; }
     .process-item h3 { margin-bottom:4px; font-size:1.08rem; }
     .process-item p { color:var(--muted); margin:0; font-size:.94rem; }
-    .cta { margin:0 24px 80px; max-width:1132px; padding:58px 65px; border-radius:14px; background:linear-gradient(120deg,#153e31,#1e7258); color:#fff; display:flex; justify-content:space-between; align-items:center; gap:30px; }
+    .cta { margin:0 24px 80px; max-width:1132px; padding:58px 65px; border-radius:14px; background:linear-gradient(120deg,#10345f,#1769aa); color:#fff; display:flex; justify-content:space-between; align-items:center; gap:30px; }
     .cta h2 { font-family:"Playfair Display",Georgia,serif; font-size:2.35rem; line-height:1.13; margin:0 0 9px; }
     .cta p { color:#d8e8df; margin:0; }
     .cta .button { background:#fff; color:var(--green-dark); white-space:nowrap; }
@@ -111,7 +111,7 @@
     <section class="hero" id="home"><div class="hero-grid"><div><span class="eyebrow">Tax, accounting &amp; compliance</span><h1>Clarity for your finances. <em>Confidence</em> for your future.</h1><p class="hero-copy">Dependable, practical tax and accounting support for individuals and businesses—so you can stay compliant, make better decisions and focus on what matters most.</p><div class="hero-actions"><a class="button button-primary" href="https://wa.me/917002272891" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Talk to an Expert</a><a class="button button-outline" href="#services">Explore our services <i class="fa-solid fa-arrow-right"></i></a></div><div class="trust-line"><span><i class="fa-solid fa-circle-check"></i>GST &amp; income tax expertise</span><span><i class="fa-solid fa-circle-check"></i>Support across India</span></div></div><aside class="hero-card"><span class="eyebrow">How we help</span><h2>Compliance made refreshingly straightforward.</h2><p>Clear advice, timely action and personal attention at every stage.</p><ul class="consult-list"><li><i class="fa-solid fa-check"></i><span>Accurate, timely filings</span></li><li><i class="fa-solid fa-check"></i><span>Practical advice for your business</span></li><li><i class="fa-solid fa-check"></i><span>A dedicated point of contact</span></li></ul></aside></div></section>
     <section class="section" id="services"><div class="wrap"><div class="section-head"><span class="eyebrow">What we do</span><h2>Professional services, tailored around you.</h2><p>From regular compliance to strategic financial support, our services are designed to keep your affairs clear and in control.</p></div><div class="service-grid"><article class="service"><div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div><h3>GST Services</h3><p>Registration, returns, refunds and ongoing GST compliance for businesses of every size.</p></article><article class="service"><div class="service-icon"><i class="fa-solid fa-receipt"></i></div><h3>Income Tax &amp; ITR</h3><p>Accurate return filing and strategic tax planning for individuals, firms and companies.</p></article><article class="service"><div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><h3>TDS Management</h3><p>Quarterly returns, certificates and complete TDS compliance handled with care.</p></article><article class="service"><div class="service-icon"><i class="fa-solid fa-users"></i></div><h3>Payroll Services</h3><p>Reliable payroll processing, EPF, ESIC and professional tax compliance.</p></article><article class="service"><div class="service-icon"><i class="fa-solid fa-calculator"></i></div><h3>Accounting</h3><p>Well-organised books, financial reporting and meaningful management information.</p></article><article class="service"><div class="service-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Business Advisory</h3><p>Sound financial guidance to support confident business decisions and growth.</p></article></div></div></section>
     <section class="section numbers"><div class="wrap"><div class="numbers-grid"><div class="number"><strong>50+</strong><span>Businesses &amp; clients supported</span></div><div class="number"><strong>5+</strong><span>Years of experience</span></div><div class="number"><strong>100%</strong><span>Focus on compliance</span></div><div class="number"><strong>24/7</strong><span>Availability for queries</span></div></div></div></section>
-    <section class="section section-soft" id="why-us"><div class="wrap why-grid"><div class="why-panel"><span class="eyebrow" style="color:#e6c889">Our promise</span><h2>Expert support with a personal approach.</h2><p>We combine technical know-how with simple, direct communication—because your financial position should never feel confusing.</p><ul class="why-list"><li><i class="fa-solid fa-check"></i><span>Transparent, straightforward advice</span></li><li><i class="fa-solid fa-check"></i><span>Proactive reminders and timely follow-up</span></li><li><i class="fa-solid fa-check"></i><span>Tailored support that fits your needs</span></li></ul></div><div id="process"><div class="section-head"><span class="eyebrow">Our process</span><h2>Simple from first conversation to final filing.</h2><p>You get a clear path forward, without unnecessary complexity.</p></div><div class="process"><article class="process-item"><div class="process-num">01</div><div><h3>Understand your requirements</h3><p>We begin with a focused conversation about your business or personal tax needs.</p></div></article><article class="process-item"><div class="process-num">02</div><div><h3>Collect and review documents</h3><p>We make it easy to share the information we need and check it carefully.</p></div></article><article class="process-item"><div class="process-num">03</div><div><h3>Prepare and keep you informed</h3><p>Our team completes the work accurately while keeping you updated at every key step.</p></div></article><article class="process-item"><div class="process-num">04</div><div><h3>File and support you after</h3><p>We handle the submission and remain available for questions and future planning.</p></div></article></div></div></div></section>
+    <section class="section section-soft" id="why-us"><div class="wrap why-grid"><div class="why-panel"><span class="eyebrow" style="color:#a8d2fa">Our promise</span><h2>Expert support with a personal approach.</h2><p>We combine technical know-how with simple, direct communication—because your financial position should never feel confusing.</p><ul class="why-list"><li><i class="fa-solid fa-check"></i><span>Transparent, straightforward advice</span></li><li><i class="fa-solid fa-check"></i><span>Proactive reminders and timely follow-up</span></li><li><i class="fa-solid fa-check"></i><span>Tailored support that fits your needs</span></li></ul></div><div id="process"><div class="section-head"><span class="eyebrow">Our process</span><h2>Simple from first conversation to final filing.</h2><p>You get a clear path forward, without unnecessary complexity.</p></div><div class="process"><article class="process-item"><div class="process-num">01</div><div><h3>Understand your requirements</h3><p>We begin with a focused conversation about your business or personal tax needs.</p></div></article><article class="process-item"><div class="process-num">02</div><div><h3>Collect and review documents</h3><p>We make it easy to share the information we need and check it carefully.</p></div></article><article class="process-item"><div class="process-num">03</div><div><h3>Prepare and keep you informed</h3><p>Our team completes the work accurately while keeping you updated at every key step.</p></div></article><article class="process-item"><div class="process-num">04</div><div><h3>File and support you after</h3><p>We handle the submission and remain available for questions and future planning.</p></div></article></div></div></div></section>
     <section class="cta"><div><h2>Ready to make your finances simpler?</h2><p>Speak with us for a no-obligation consultation.</p></div><a class="button" href="https://wa.me/917002272891" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Start a conversation</a></section>
     <section class="section" id="contact"><div class="wrap contact-grid"><div class="section-head"><span class="eyebrow">Contact us</span><h2>Let’s take care of your tax and accounting needs.</h2><p>Whether you need help with an immediate filing or ongoing support, we are here to help.</p><a class="button button-primary" href="https://wa.me/917002272891" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Message on WhatsApp</a></div><div class="contact-details"><div class="contact-detail"><i class="fa-solid fa-phone"></i><h3>Call us</h3><a href="tel:+917002272891">+91 7002272891</a></div><div class="contact-detail"><i class="fa-solid fa-envelope"></i><h3>Email us</h3><a href="mailto:anupamtax@outlook.com">anupamtax@outlook.com</a></div><div class="contact-detail"><i class="fa-regular fa-clock"></i><h3>Office hours</h3><p>Mon–Sat, 9:30 AM–6:30 PM</p></div><div class="contact-detail"><i class="fa-solid fa-location-dot"></i><h3>Service area</h3><p>Serving clients nationwide</p></div></div></div></section>
   </main>
