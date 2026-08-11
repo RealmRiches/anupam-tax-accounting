@@ -713,6 +713,66 @@
         font-size: 1.3rem;
       }
     }
+
+    /* Light theme */
+    :root {
+      --primary-color: #ffffff;
+      --secondary-color: #0f766e;
+      --light-color: #111827;
+      --dark-color: #f8fafc;
+      --text-color: #334155;
+      --neon-blue: #14b8a6;
+      --neon-pink: #64748b;
+    }
+
+    body { background: #f8fafc; color: var(--text-color); }
+    .futuristic-background { background: radial-gradient(circle at top, #ffffff 0%, #eef6f5 55%, #e7f0ef 100%); }
+    .grid-overlay { background-image: linear-gradient(rgba(15, 118, 110, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 118, 110, .07) 1px, transparent 1px); opacity: .55; }
+    .particle { background: #0f766e; }
+    .neon-line { background: linear-gradient(90deg, transparent, rgba(15, 118, 110, .55), transparent); opacity: .3; }
+
+    header { color: #111827; }
+    h1, h2, .service-item h3, .feature-title, .step-title, .cta-title, .footer-logo {
+      color: #111111;
+      text-shadow: 0 1px 0 #ffffff, 0 2px 10px rgba(15, 23, 42, .22);
+    }
+    h1 {
+      background: linear-gradient(180deg, #3f3f46 0%, #050505 48%, #373737 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, .9), 0 5px 16px rgba(0, 0, 0, .22);
+    }
+    h1::after, h2::after { background: linear-gradient(90deg, #111827, var(--secondary-color)); box-shadow: 0 2px 8px rgba(15, 118, 110, .35); }
+    .tagline { color: #334155; }
+
+    .contact-bar { background: rgba(255, 255, 255, .9); color: #111827; border-bottom-color: rgba(15, 118, 110, .2); box-shadow: 0 5px 15px rgba(15, 23, 42, .08); }
+    .contact-bar a { color: #0f766e; }
+    .contact-bar a:hover { color: #111827; text-shadow: 0 1px 6px rgba(15, 118, 110, .25); }
+
+    .card, .service-item, .feature-box, .contact-card, .stat-item {
+      background: rgba(255, 255, 255, .88);
+      border-color: rgba(15, 118, 110, .16);
+      box-shadow: 0 8px 22px rgba(15, 23, 42, .09);
+    }
+    .card:hover, .service-item:hover, .feature-box:hover, .contact-card:hover, .stat-item:hover { box-shadow: 0 14px 30px rgba(15, 23, 42, .14), 0 0 14px rgba(15, 118, 110, .13); border-color: rgba(15, 118, 110, .35); }
+    .service-item p { color: #475569; }
+    .service-icon { color: rgba(15, 118, 110, .16); }
+    .service-item:hover .service-icon { color: rgba(15, 118, 110, .3); }
+    .feature-icon, .contact-icon { color: #0f766e; text-shadow: 0 1px 6px rgba(15, 118, 110, .2); }
+
+    .stats-section, .cta-section { background: linear-gradient(135deg, #ffffff 0%, #e8f5f3 100%); color: #334155; border-color: rgba(15, 118, 110, .18); box-shadow: 0 10px 26px rgba(15, 23, 42, .08); }
+    .stats-section::before { background: linear-gradient(45deg, transparent 50%, rgba(15, 118, 110, .05) 50%); }
+    .stat-number { color: #0f766e; text-shadow: 0 1px 6px rgba(15, 118, 110, .2); }
+    .process-step::before { background: #ffffff; color: #0f766e; box-shadow: 0 4px 12px rgba(15, 118, 110, .18); }
+    .cta-section::before { opacity: .35; }
+    .whatsapp-btn { color: white; }
+
+    .contact-card a { color: #0f766e; }
+    footer { background: #ffffff; color: #475569; border-top-color: rgba(15, 118, 110, .18); box-shadow: 0 -4px 18px rgba(15, 23, 42, .05); }
+    .footer-links a, .social-icons a { color: #0f766e; }
+    .footer-links a:hover, .social-icons a:hover { color: #111827; text-shadow: 0 1px 6px rgba(15, 118, 110, .22); }
+    .footer-bottom { border-top-color: rgba(15, 118, 110, .16); }
   </style>
 </head>
 <body>
